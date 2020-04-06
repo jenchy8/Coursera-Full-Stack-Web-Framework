@@ -1,0 +1,37 @@
+<html>
+  <head>
+      <script>
+        var target_index;
+        var target;
+        var guess_input;
+        var finished = false;
+        var guesses = 0;
+        var color = ["Aqua", "Blue", "DarkRed", "Green", "Gold", "Indigo", "Lime", "Navy", "Pink", "Red", "Silver", "Yellow"];
+
+        function dogame()
+        {
+          var random_number = Math.random() * 12;
+          target_index = Math.floor(random_number);
+
+          target = color[target_index];
+          alert("Target color is " + target);
+
+          while (!finished)
+          {
+              guess_input = prompt("I am thinking of one of these colors:\n\n" + color + "\n\nWhat color am I thinking of?");
+              guesses++;
+
+              if(target == guess_input)
+              {
+                finished = true;
+              }
+          }
+
+        }
+
+
+      </script>
+  </head>
+  <body onload="dogame();">
+  </body>
+</html>

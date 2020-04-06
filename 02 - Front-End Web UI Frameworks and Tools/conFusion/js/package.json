@@ -1,0 +1,21 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "Package.json file",
+  "main": "bootstrap.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "blabla"
+  ],
+  "author": "Jen",
+  "license": "ISC",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
